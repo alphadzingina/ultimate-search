@@ -24,3 +24,23 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Ultimate Search!")
 print("You're on the island of Dzadzakun. Your mission is to find Alpha's lost treasure.")
 print("Goodluck")
+choice1 = input("You\'re at a crossroad. Where do you want to go? Type 'left' or 'right'")
+if choice1 == "right":
+    print("You fell into a hole. Game Over")
+else:
+    choice2 = input("You\'ve come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.")
+    if choice2 == "swim":
+        print("You got attacked by trouts. Game Over")
+    else:
+        choice3 = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?")
+        if choice3 == "red":
+            print("It's a room full of fire. Game Over.")
+        elif choice3 == "yellow":
+            print("You found the treasure! Congratulations! You're the ultimate man!")
+        elif choice3 == "blue":
+            print("You enter a room of beasts. Game Over.")
+        else:
+            print("You chose a door that doesn't exist. Game Over.")
+
+print("The Game has ended")
+
